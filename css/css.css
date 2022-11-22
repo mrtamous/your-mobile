@@ -1,0 +1,48 @@
+/* Box sizing rules */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+Remove default margin
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove List style on ul , ol elements with a */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+/* set core body defaults */
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that dont have a class get default */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* make images easier to work with */
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
