@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+
 /* Box sizing rules */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-Remove default margin
-/*  */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+Remove default margin
+/*  */
 
+section {
+  padding: 2rem;
+}
 /* Remove List style on ul , ol elements with a */
 
 ul[role="list"],
@@ -40,9 +42,358 @@ a:not([class]) {
 
 /* make images easier to work with */
 
-img,
+/* img,
 picture,
 svg {
-  max-width: 100%;
+  width: 100%;
   display: block;
+} */
+
+/* main edite */
+
+:root {
+  /* font family */
+
+  --ff-primary: "Tajawal", sans-serif;
+  --ff-logo: "Lalezar", cursive;
+
+  /* font size */
+
+  --fs-logo: 2rem;
+  --fs-primary: 1.4rem;
+  --fs-heading-big: 2.6rem;
+  --fs-heading-small: 1.6rem;
+  --fs-small: 1.2rem;
+  --fs-big: 2rem;
+
+  /* color */
+
+  --clr-primary: #6e0aef;
+  --clr-primary-100: #7d22f3;
+  --clr-accent: #f8f7fc;
+  --clr-accent-100: #ffffff;
+  --clr-nutral-100: #4e547e;
+
+  --primary: var(--clr-primary-100);
+  --primary-100: var(--clr-primary);
+  --bg-accent: var(--clr-accent);
+  --accent-100: var(--clr-accent-100);
+  --nutral-100: var(--clr-nutral-100);
+
+  /*  */
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.flex-col {
+  display: flex;
+  /* flex-direction: column; */
+  flex-flow: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+header .container {
+  justify-content: space-between;
+}
+.header__logo {
+  align-items: center;
+  font-size: var(--fs-logo);
+}
+
+.header__logo i {
+  color: var(--primary);
+}
+
+.hero {
+  height: 90vh;
+  align-items: center;
+}
+.hero aside {
+  justify-content: space-between;
+}
+ul {
+  margin: 1rem;
+  gap: 1rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: var(--fs-primary);
+}
+
+figure {
+  height: 80%;
+}
+
+figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.hero {
+  background-color: var(--bg-accent);
+}
+
+.hero__title {
+  max-width: 60%;
+}
+
+h4 {
+  font-size: var(--fs-heading-small);
+  color: var(--primary);
+  margin: 1rem;
+}
+
+Features h4 {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: var(--fs-heading-big);
+}
+
+p {
+  font-size: var(--fs-primary);
+  margin: 0.5rem;
+}
+
+span {
+  color: var(--primary);
+}
+
+.btn {
+  background-color: var(--primary);
+  width: 10rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--primary-100);
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--accent-100);
+  font-size: var(--fs-primary);
+}
+
+.Features__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+
+.Features__card div {
+  max-width: 17rem;
+  background-color: var(--accent-100);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-primary);
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  justify-content: space-between;
+}
+
+.Features__card i {
+  color: var(--primary);
+}
+
+.Features__card i:hover {
+  color: var(--primary-100);
+  scale: 1.5;
+  cursor: pointer;
+}
+
+.Features__card div:hover {
+  border: 2px solid var(--primary);
+  scale: 1.1;
+}
+
+.Features {
+  background-color: var(--bg-accent);
+}
+
+.Features .container {
+  padding: 1rem;
+}
+
+.phones__type {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.phone_des {
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.phone_des figure {
+  margin-bottom: 1rem;
+}
+
+.phone_des img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.phone_des figcaption {
+  font-size: var(--fs-big);
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.newest-phones .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.btn-pho {
+  color: var(--accent-100);
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--bg-accent);
+  height: 25vh;
+  padding: 2rem 0;
+}
+
+.footer_section {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_section p {
+  font-size: var(--fs-small);
+  margin-bottom: 1rem;
+}
+
+ul li:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.header__logo figcaption {
+  font-family: var(--ff-logo);
+  margin: 0 0.5rem;
+}
+
+.Features__card h3 {
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+  font-size: var(--fs-big);
+}
+.Features__card p {
+  font-size: var(--fs-primary);
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --fs-logo: 2rem;
+    --fs-primary: 1rem;
+    --fs-heading-big: 1.6rem;
+    --fs-heading-small: 1rem;
+    --fs-small: 0.6rem;
+    --fs-big: 1.2rem;
+  }
+
+  h4 {
+    font-size: var(--fs-heading-small);
+  }
+
+  h1 {
+    font-size: var(--fs-heading-big);
+  }
+
+  p {
+    font-size: var(--fs-primary);
+  }
+
+  .Features__card,
+  .phones__type {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 0 2.5rem;
+  }
+
+  .newest-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --fs-logo: 1.6rem;
+    --fs-primary: 0.7rem;
+    --fs-heading-big: 1.2rem;
+    --fs-heading-small: 0.9rem;
+    --fs-small: 0.6rem;
+    --fs-big: 1.2rem;
+  }
+
+  h4 {
+    font-size: var(--fs-heading-small);
+  }
+
+  h1 {
+    font-size: var(--fs-heading-big);
+  }
+
+  p {
+    font-size: var(--fs-primary);
+  }
+  .phones__type {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Features__card,
+  .phones__type {
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-content: center;
+  }
+
+  .Features .container {
+    align-items: center;
+  }
+
+  .Features__card div {
+    width: 100%;
+  }
 }

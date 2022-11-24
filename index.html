@@ -1,20 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="css/css.css" />
-    <title> </title>
+    <title>تلفونك</title>
   </head>
   <body>
     <header>
-      <h1></h1>
-      <nav></nav>
-    </header>
-    <main></main>
+      <section class="container flex-row">
+        <aside class="header__logo flex-row">
+          <i class="fa-solid fa-mobile"></i>
+          <figcaption>تلفونك</figcaption>
+        </aside>
 
-    <footer></footer>
+        <nav class="header_nav">
+          <ul class="flex-row">
+            <li>الصفحة الرئيسية</li>
+            <li>ميزاتنا</li>
+            <li>احدث الهواتف</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <article class="hero flex-row">
+        <section class="container flex-row">
+          <aside class="hero__title flex-col">
+            <h4>تسوق بأمان. تسوق بسرعة</h4>
+            <h1>
+              اكتشف أحدث الهواتف بأفضل الأسعار لتقدر توفّر على حالك وتكسب راحة
+              بالك
+            </h1>
+            <p>
+              هاتفك هو أكبر متجر لشراء كل ما هو متعلق بالهواتف.
+              <span class="purple">جودة وسرعة وأمان</span> أثناء تسوقك
+            </p>
+            <button class="btn"><a href="#features">إعرف أكثر </a></button>
+          </aside>
+          <figure class="hero__img">
+            <img src="/img/hero__img.png" alt="هاتف ذكي" />
+          </figure>
+        </section>
+      </article>
+      <article class="Features">
+        <section class="container flex-col">
+          <h4>لماذا نحن أفضل خيار ؟</h4>
+          <div class="Features__card">
+            <div>
+              <i class="fas fa-shipping-fast"></i>
+              <h3>سرعة بالتوصيل</h3>
+              <p>طلبك رح يوصل خلال 2-5 أيام</p>
+            </div>
+            <div>
+              <i class="fas fa-user-shield"></i>
+              <h3>حماية وأمان</h3>
+              <p>حماية أثناء الدفع الالكتروني</p>
+            </div>
+            <div>
+              <i class="fas fa-sort-amount-up-alt"></i>
+              <h3>تشكيلة واسعة</h3>
+              <p>أحدث الهواتف متوفرة لدينا</p>
+            </div>
+            <div>
+              <i class="fas fa-phone-square"></i>
+              <h3>دعم فني</h3>
+              <p>دعم فني على مدار الساعة لحل مشاكلك</p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="newest-phones">
+        <section class="container">
+          <div class="heading"><h4>الهواتف المضافة حديثا</h4></div>
+          <div class="phones__type">
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+
+            <h1>
+              <p>hello there</p>
+
+              <h1></h1>
+            </h1>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+            <div class="flex-col phone_des">
+              <figure><img src="/img/img2.jpg" alt="phones" /></figure>
+              <figcaption>اسم الهاتف</figcaption>
+            </div>
+          </div>
+
+          <button class="btn btn-pho">تصفح جميع الهواتف</button>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container footer_section flex-col">
+        <p>جميع الحقوق محفوظة لشركة تلفونك 2021</p>
+        <ul class="flex-row">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/js.js"></script>
   </body>
 </html>
